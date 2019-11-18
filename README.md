@@ -13,9 +13,8 @@ Widgets for Windows 10 http://win10widgets.com modified
 ## Requirements
 
 - Rainmeter
-
 - Spicetify and WebNowPlaying if you want to use spotify
-- SpeedFan,HWiNFO,CoreTemp and/or MSIAfterburner if you want to get the CPU/GPU Temperature
+- SpeedFan, HWiNFO, Core Temp and/or MSI Afterburner if you want to get the CPU/GPU Temperature
 
 ## Credits
 

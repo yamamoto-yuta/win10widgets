@@ -16,24 +16,22 @@
 ;
 ; Alternatively, in the USA, you can simply use your ZipCode as the LocationCode.
 ; The weather.com CountryRegion codes (e.g.; USNY0996) will also work as the LocationCode.
-; NOTE: Imperial/Metric values displayed are determined based on the language selected; set the UnitsTemp accordingly to 'F' or 'C'.
+; NOTE: Imperial/Metric values displayed are determined based on the language selected; 
 
 ; If another language or unit(s) of measures are desired, simply go to https://weather.com/
 ; Using the controls at the top of the page, set your country, language, and units of measure as desired.
 ; Copy and enter the LangLoc from the resulting URL, and the long number at the end as the LocationCode.
-; Change UnitsTemp to either F or C to match what is displayed on the weather wbsite.
 
-; For example, French would be LangLoc=fr-FR and UnitsTemp=C
+; For example, French would be LangLoc=fr-FR
 
 ; Note that simply changing from imperial F to metric C units of measure while keeping the 
-; langage as English can be done by using en-GB as the LangLoc and C as the UnitsTemp.
- 
+; langage as English can be done by using en-GB as the LangLoc.
+
 [Variables]
 
 LocationCode=USNY0996
 
 LangLoc=en-US
-UnitsTemp=C
 
 ; =====================================
 ; Don't change anything below here.
@@ -55,7 +53,7 @@ Hours=2
 
 Location=(?siU)(?(?=.*<h1 class="h4 today_nowcard-location").* className="h4 today_nowcard-location">(.*)<span class=".*" className=".*"></span></h1>)
 
-TempUnit=<span class="icon icon-font iconset-ui icon-globe" className="icon icon-font iconset-ui icon-globe"></span><span>.*</span><span class="styles__borderLeft__2zhrE">�(\w)</span>
+TempUnit=(?siU)<span class="icon icon-font iconset-ui icon-globe" className="icon icon-font iconset-ui icon-globe"></span><span>.*</span><span class="styles__borderLeft__2zhrE">(.*)</span>
 
 NOW=(?siU)(?(?=.*</div></span><p class="today_nowcard-).*timestamp"><span>(.*)<!----> </span><span>(.*)</span>).*(?(?=.*<div class="today_nowcard-section today_nowcard-condition"><div class="condition-icon wx-weather-icon vector).*"><icon class="icon icon-svg icon-svg-.* .* icon-(.*)" className="icon icon-svg icon-svg-.* .* icon-.*">.*</icon></div>)(?(?=.*<div class="today_nowcard-temp").*><span class="">(.*)<sup>(.*)</sup></span>).*(?(?=.*<div class="today_nowcard-phrase).*">(.*)</div>)(?(?=.*<div class="today_nowcard-feels).*"><span class="btn-text">(.*)<!----> </span><span class="deg-feels" className="deg-feels">(.*)<sup>(.*)</sup></span>).*(?(?=.*<div class="today_nowcard-hilo").*><span class="btn-text">.*<!----> </span><span class="deg-hilo-nowcard"><span class="">(.*)<sup>(.*)</sup></span>).*(?(?=.*<span class="btn-text">.*<!---->).* </span><span class="deg-hilo-nowcard"><span class="">(.*)<sup>(.*)</sup></span>).*(?(?=.*<div class="today_nowcard-sidecar component panel"><table><caption>(.*)</caption><tbody>).*<tr><th>(.*)</th><td><span class="">(.*)</span></td></tr><tr><th>(.*)</th><td><span class=""><span>(.*)<span class="Percentage__percentSymbol__2Q_AR">(.*)</span></span></span></td></tr><tr><th>.*</th><td><span class="">.*<sup>.*</sup></span></td></tr><tr><th>(.*)</th><td><span class="">(.*)<!---->.*</span></td></tr><tr><th>(.*)</th><td><span class="">(.*)</span></td>)
 
@@ -70,10 +68,6 @@ SUN=(?siU)(?(?=.*<span class="wx-detail-label show-sm">.*</span).*<span class="w
 Details=(?siU)(?(?=.*<td class="twc-sticky-col" headers="day" title="(.*)").* .* className="twc-sticky-col"><div>).*(?(?=.*<td class="twc-sticky-col" headers="day" title="(.*)").* .* className="twc-sticky-col"><div>).*(?(?=.*<td class="twc-sticky-col" headers="day" title="(.*)").* .* className="twc-sticky-col"><div>).*(?(?=.*<td class="twc-sticky-col" headers="day" title="(.*)").* .* className="twc-sticky-col"><div>).*(?(?=.*<td class="twc-sticky-col" headers="day" title="(.*)").* .* className="twc-sticky-col"><div>).*(?(?=.*<td class="twc-sticky-col" headers="day" title="(.*)").* .* className="twc-sticky-col"><div>).*(?(?=.*<td class="twc-sticky-col" headers="day" title="(.*)").* .* className="twc-sticky-col"><div>).*(?(?=.*<td class="twc-sticky-col" headers="day" title="(.*)").* .* className="twc-sticky-col"><div>)
 
 DetailsT=(?siU)(?(?=.*div class="dp-details" id="dp0-details").* className="dp-details"><span class="today-wx-descrip" id="dp0-details-narrative">(.*)</span>)
-BackgroundThemeName=Light
-ForegroundThemeName=Dark
-BackgroundColorName=White
-ForegroundColorName=Black
 
 
 ; � 2019 by Xxenium

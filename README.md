@@ -1,3 +1,9 @@
+**Changes**
+- Add widget; CPU temperature histogram
+![CPU temperature histogram widgets](README-img/ss_cpu-temp-hist.png)
+
+---
+
 # win10widgets
 Widgets for Windows 10 http://win10widgets.com modified
 

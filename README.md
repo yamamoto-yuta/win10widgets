@@ -1,7 +1,11 @@
 **Changes**
-- Add widget; CPU temperature histogram
+- Add widget: CPU temperature histogram
 
-![CPU temperature histogram widgets](README-img/ss_cpu-temp-hist.png)
+![CPU temperature histogram widget](README-img/ss_cpu-temp-hist.png)
+
+- Add widget: UpTime Widget
+
+![UpTime Widget](README-img/ss_uptime-widget.png)
 
 ---
 

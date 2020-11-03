@@ -1,11 +1,20 @@
-**Changes**
-- Add widget: CPU temperature histogram
+# Changes
+
+## [Add] CPU temperature histogram
 
 ![CPU temperature histogram widget](README-img/ss_cpu-temp-hist.png)
 
-- Add widget: UpTime Widget
+## [Add] UpTime Widget
 
 ![UpTime Widget](README-img/ss_uptime-widget.png)
+
+## [Add] VoiceDevice Widget
+
+![VoiceDevice Widget](README-img/ss_voicedevice-widget.png)
+
+## [Update] Switch VoiceDevice
+
+![Switch VoiceDevice](README-img/ss_switch-voicedevice.png)
 
 ---
 
